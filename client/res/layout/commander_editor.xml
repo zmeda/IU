@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/widget147"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<!-- TABLE  -->
+
+
+	<ImageView android:id="@+id/img_commander"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+	</ImageView>
+
+	<TextView android:id="@+id/cmdeditor_title"
+		android:layout_width="fill_parent" android:layout_height="30px"
+		android:text="Title" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+	</TextView>
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/cmdeditor_table" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/cmdeditor_title"
+		android:stretchColumns="0,1,2,3,4">
+
+
+		<TableRow android:id="@+id/cmdeditor_row_title"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#774444ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/cmdeditor_title"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/cmdeditor_col1_title"
+				android:text="Col 1a">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_col2_title"
+				android:text="Col 2" android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_col3_title"
+				android:text="Col 3" android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_col4_title"
+				android:text="  Add " android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_col5_title"
+				android:gravity="center" android:text="Rem">
+			</TextView>
+
+		</TableRow>
+
+		<TableRow android:id="@+id/cmdeditor_row_1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#776969ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/cmdeditor_row_title"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/cmdeditor_1_1" android:text="TextView">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_1_2" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_1_3" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+
+			<Button android:id="@+id/cmdeditor_1_btn_1" android:text="+"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+			</Button>
+			<Button android:id="@+id/cmdeditor_1_btn_2" android:text="-">
+			</Button>
+		</TableRow>
+
+		<TableRow android:id="@+id/cmdeditor_row_2"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#776969ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/cmdeditor_row_1"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/cmdeditor_2_1" android:text="TextView">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_2_2" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_2_3" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+
+			<Button android:id="@+id/cmdeditor_2_btn_1" android:text="+">
+			</Button>
+			<Button android:id="@+id/cmdeditor_2_btn_2" android:text="-">
+			</Button>
+		</TableRow>
+
+		<TableRow android:id="@+id/cmdeditor_row_3"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#776969ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/cmdeditor_row_2"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/cmdeditor_3_1" android:text="TextView">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_3_2" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/cmdeditor_3_3" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+
+			<Button android:id="@+id/cmdeditor_3_btn_1" android:text="+">
+			</Button>
+			<Button android:id="@+id/cmdeditor_3_btn_2" android:text="-">
+			</Button>
+		</TableRow>
+
+	</TableLayout>
+	TableLayout
+
+	<Button android:id="@+id/cmdeditor_btn_cancel"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="Cancel" android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true">
+	</Button>
+	<Button android:id="@+id/cmdeditor_btn_reset"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="Reset" android:layout_alignBottom="@+id/cmdeditor_btn_cancel"
+		android:layout_toLeftOf="@+id/cmdeditor_btn_cancel" android:layout_marginRight="20px">
+	</Button>
+	<Button android:id="@+id/cmdeditor_btn_ok" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignBottom="@+id/cmdeditor_btn_cancel"
+		android:layout_toRightOf="@+id/cmdeditor_btn_cancel" android:text="OK" android:layout_marginLeft="20px">
+	</Button>
+</RelativeLayout>

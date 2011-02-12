@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/breifing_layout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/tutorial">
+
+	<ViewFlipper android:id="@+id/briefing_switcher"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+
+
+		<!-- 
+		    Explore Mode
+		  -->
+
+
+		<!-- Page 1 -->
+		<LinearLayout android:id="@+id/brief_page1"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="At ease, Commander!">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Your mission is to explore unknown territory to find enemy bases and to conquer them with your army.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="You will gain experience by exploring the terrain and winning battles. If you are effective, you may even get a promotion!">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="By gaining rank, you will be able to command larger armies.">
+			</TextView>
+		</LinearLayout>
+
+
+		<!-- Page 2 -->
+		<LinearLayout android:id="@+id/brief_page2"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Strategy mode">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Use the 'Strategy mode' to explore the world around you.">
+			</TextView>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text=" - Your convoy:  ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/rank_brief">
+				</ImageView>
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text=" - Enemy commanders:  ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/rank_brief_enemy">
+				</ImageView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text=" - Your bases:  ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/flag_blue">
+				</ImageView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text=" - Enemy bases:  ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/flag_red">
+				</ImageView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text=" - Guerilla rebels:  ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/flag_green">
+				</ImageView>
+			</LinearLayout>
+		</LinearLayout>
+
+
+		<!-- Page 3 -->
+		<LinearLayout android:id="@+id/brief_page3"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Strategy mode - Controls">
+			</TextView>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text=" - Use arrow keys to pan the map:  ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/arrows">
+				</ImageView>
+			</LinearLayout>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Use 'I' key to zoom In">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Use 'O' key to zoom Out">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Use 'C' key to center on your commander">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Use 'F' key to follow your commander">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text=" - Use the crosshair in the center of the screen to select map objects">
+			</TextView>
+		</LinearLayout>
+
+
+		<!-- Page 4 -->
+		<LinearLayout android:id="@+id/brief_page4"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="GPS Simulator">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text="Use the menu to control the GPS simulator.">
+			</TextView>
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/strategy_menu">
+			</ImageView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="At any time, you may decide to give your troops some rest and camp where you are.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Be careful not to run into a mine! You may loose precious units in your convoy.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" ">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Good hunting, Commander!">
+			</TextView>
+		</LinearLayout>
+
+
+
+		<!-- 
+		    Battle Mode
+		  -->
+
+		<!-- Page 5 -->
+		<LinearLayout android:id="@+id/brief_page5"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Well done, Commander!">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Your explore mission is already giving us some good results. In this mission you will have to demonstrate your tactical skills.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Our intelligence agents will provide you with the last known status of the enemy base. Beware that this information may not reflect the actual fire power the enemy has.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Prepare to FIGHT!">
+			</TextView>
+		</LinearLayout>
+
+
+		<!-- Page 6 -->
+		<LinearLayout android:id="@+id/brief_page6"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Battle mode - Units">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text="Your units are blue:">
+			</TextView>
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/artillery_brief_blue">
+			</ImageView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text="Enemy units are red:">
+			</TextView>
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/artillery_brief_red">
+			</ImageView>
+		</LinearLayout>
+
+
+		<!-- Page 7 -->
+		<LinearLayout android:id="@+id/brief_page7"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Battle mode - Squads">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Your units are aranged into three different squads.">
+			</TextView>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textStyle="italic" android:textSize="17sp"
+					android:layout_height="wrap_content" android:text="Hoverjets\nSelect them by pressing 1.   ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/hoverjet_unit">
+				</ImageView>
+			</LinearLayout>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" ">
+			</TextView>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text="Tanks\nSelect them by pressing 2.   ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/tank_unit">
+				</ImageView>
+			</LinearLayout>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" ">
+			</TextView>
+
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:textSize="17sp" android:textStyle="italic"
+					android:layout_height="wrap_content" android:text="Artillery\nSelect them by pressing 3.   ">
+				</TextView>
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/artillery_unit">
+				</ImageView>
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- Page 8 -->
+		<LinearLayout android:id="@+id/brief_page8"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:padding="10px">
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="18sp" android:textStyle="bold"
+				android:layout_height="wrap_content" android:text="Battle mode - Orders">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text="Select units either by pressing their respective 'squad' shortcut key, or by dragging a box around them. Issue an order by choosing the order and selecting a point on the map.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" ">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text="You can issue several orders to your units:">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Move ('M' Key) to move your units.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Attack ('A' Key) to attack enemy units.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text=" - Turn ('T' Key) to look in a specified direction.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content" android:text=" - Turn ('Z' Key) to zoom in or out.">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:textSize="17sp" android:textStyle="italic"
+				android:layout_height="wrap_content"
+				android:text=" - Guard ('G' Key) to order your units to stand their ground, and attack any approaching enemy units.">
+			</TextView>
+		</LinearLayout>
+
+	</ViewFlipper>
+
+	<Button android:id="@+id/briefing_more" android:layout_width="wrap_content"
+		android:text="More" android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true" android:layout_height="wrap_content">
+	</Button>
+
+	<Button android:id="@+id/briefing_close" android:layout_width="wrap_content"
+		android:text="Close" android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_height="wrap_content">
+	</Button>
+
+</RelativeLayout>

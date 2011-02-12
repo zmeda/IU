@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/widget147"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#770000ff" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<ImageView android:id="@+id/img_attack" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+	</ImageView>
+
+
+	<TextView android:id="@+id/battleprep_title"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="Title" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+	</TextView>
+
+	<!-- TABLE  -->
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/battleprep_table" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/battleprep_title"
+		android:stretchColumns="0,1,2,3,4">
+
+
+		<TableRow android:id="@+id/battleprep_row_title"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#774444ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/battleprep_title"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/battleprep_col1_title"
+				android:text="Col 1a">
+			</TextView>
+			<TextView android:id="@+id/battleprep_col2_title"
+				android:text="Col 2" android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/battleprep_col3_title"
+				android:text="Col 3" android:gravity="center">
+			</TextView>
+		</TableRow>
+
+		<TableRow android:id="@+id/battleprep_row_1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#776969ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/battleprep_row_title"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/battleprep_1_1" android:text="TextView">
+			</TextView>
+			<TextView android:id="@+id/battleprep_1_2" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/battleprep_1_3" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+
+
+		</TableRow>
+
+		<TableRow android:id="@+id/battleprep_row_2"
+			android:layout_width="fill_parent" android:layout_height="30px"
+			android:background="#776969ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/battleprep_row_1"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/battleprep_2_1" android:text="TextView">
+			</TextView>
+			<TextView android:id="@+id/battleprep_2_2" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/battleprep_2_3" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+
+		</TableRow>
+
+		<TableRow android:id="@+id/battleprep_row_3"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#776969ff" xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_below="@+id/battleprep_row_2"
+			android:layout_alignParentLeft="true">
+			<TextView android:id="@+id/battleprep_3_1" android:text="TextView">
+			</TextView>
+			<TextView android:id="@+id/battleprep_3_2" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+			<TextView android:id="@+id/battleprep_3_3" android:text="TextView"
+				android:gravity="center">
+			</TextView>
+
+		</TableRow>
+
+	</TableLayout>
+
+	<TextView android:id="@+id/txt_notify" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="..."
+
+		android:layout_centerVertical="true" android:layout_centerHorizontal="true">
+	</TextView>
+
+	<Button android:id="@+id/battleprep_btn_cancel"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="Cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+	</Button>
+
+	<Button android:id="@+id/battleprep_btn_attack"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="Attack" android:layout_alignParentBottom="true" android:layout_alignParentRight="true">
+	</Button>
+
+</RelativeLayout>

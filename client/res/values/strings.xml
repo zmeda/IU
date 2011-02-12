@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IU</string>
+  
+  <string name="menu_start">Start</string>
+  <string name="menu_stop">Stop</string>
+  <string name="menu_pause">Pause</string>
+  <string name="menu_resume">Resume</string>
+    
+  <string name="mode_ready">IU\nPress 'B' To Play</string>
+  <string name="mode_pause">Paused\nPress 'B' To Resume</string>
+  <string name="mode_lose">Game Over\nPress 'B' To Play</string>
+  <string name="mode_win_prefix">Success!\nPress 'B' to Play</string> 
+  
+  <string name="mode_move">'Move' mode</string>
+  <string name="mode_attack">'Attack' mode</string>
+  <string name="mode_rotate">'Rotate' mode</string>
+  <string name="mode_free">'Free' mode</string> 
+  
+  <string name="message_stopped">Stopped</string>
+
+  <string name="iu_layout_mode1_text"></string>
+  <string name="iu_layout_mode2_text"></string>
+  
+  <!-- ============================== -->
+  <!--  playergui.xml strings  -->
+  <!-- ============================== -->
+    
+  <string name="groupMap_text">Map</string>
+  <string name="groupPlayer_text">Player</string>
+  <string name="groupNetwork_text">Network</string>
+  <string name="lblLargeMap_text">large map:</string>
+  <string name="lblNumUnits_text">units (1-199):</string>
+  <string name="lblArmy_text">army:</string>
+  <string name="lblColor_text">color:</string>
+  <string name="lblName_text">name:</string>
+  <string name="lblServer_text">server:</string>
+  <string name="tbxNumUnits_text">30</string>
+  <string name="tbxName_text">player</string>  
+  <string name="tbxServer_text">10.106.6.21</string>  
+  <string name="btnJoinGame_text">Join game</string>
+    
+  <!-- ============================== -->
+  <!--  exploremode.xml strings  -->
+  <!-- ============================== -->
+    
+  <string name="start_walking_text">Explore</string>
+  <string name="stop_walking_text">Camp here</string>
+  <string name="walk_backwards_text">Change direction</string>
+  <string name="log_out_text">Log out</string>
+  
+</resources>

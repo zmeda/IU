@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/widget989"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/attack">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/rl_pm_header" android:layout_alignParentTop="true"
+		android:layout_height="40px">
+		<TextView android:id="@+id/txt_practice_title"
+			android:layout_width="wrap_content" android:text="Skirmish"
+			android:textSize="22px" android:textStyle="bold"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+		</TextView>
+	</RelativeLayout>
+	<RelativeLayout android:layout_below="@+id/rl_pm_header"
+		android:layout_width="fill_parent" android:id="@+id/rl_pm_p1"
+		android:layout_height="wrap_content">
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/rl_pm_p1_header">
+			<TextView android:id="@+id/txt_practice_p1_title"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:text="Commander" android:textStyle="bold"
+				android:layout_alignParentLeft="true" android:textSize="20px">
+			</TextView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_below="@+id/rl_pm_p1_header"
+			android:layout_width="fill_parent" android:id="@+id/rl_pm_p1_hov"
+			android:layout_height="48px">
+			<TextView android:id="@+id/txt_practice_p1_hov_title"
+				android:layout_height="wrap_content" android:text="Hovercraft : "
+				android:textStyle="bold" android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true" android:layout_marginLeft="20px"
+				android:textSize="18px" android:layout_width="120px">
+			</TextView>
+			<TextView android:id="@+id/txt_practice_p1_hov"
+				android:layout_width="50px" android:layout_height="wrap_content"
+				android:text="2" android:layout_alignTop="@+id/txt_practice_p1_hov_title"
+				android:layout_toRightOf="@+id/txt_practice_p1_hov_title"
+				android:textSize="18px">
+			</TextView>
+			<Button android:id="@+id/btn_practice_p1_hov_add"
+				android:layout_width="wrap_content" android:text="+"
+				android:layout_toRightOf="@+id/txt_practice_p1_hov"
+				android:layout_height="wrap_content">
+			</Button>
+			<Button android:id="@+id/btn_practice_p1_hov_remove"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="-" android:layout_alignTop="@+id/btn_practice_p1_hov_add"
+				android:layout_toRightOf="@+id/btn_practice_p1_hov_add">
+			</Button>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/rl_pm_p1_tan"
+			android:layout_width="fill_parent" android:layout_below="@+id/rl_pm_p1_hov"
+			android:layout_height="48px">
+			<TextView android:id="@+id/txt_practice_p1_tan_title"
+				android:layout_height="wrap_content" android:text="Tank : "
+				android:textStyle="bold" android:layout_alignParentLeft="true"
+				android:layout_marginLeft="20px" android:layout_width="120px"
+				android:textSize="18px" android:layout_centerVertical="true">
+			</TextView>
+			<TextView android:id="@+id/txt_practice_p1_tan"
+				android:layout_width="50px" android:layout_height="wrap_content"
+				android:text="2" android:layout_alignTop="@+id/txt_practice_p1_tan_title"
+				android:layout_toRightOf="@+id/txt_practice_p1_tan_title"
+				android:textSize="18px">
+			</TextView>
+			<Button android:id="@+id/btn_practice_p1_tan_add"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="+" android:layout_toRightOf="@+id/txt_practice_p1_tan">
+			</Button>
+			<Button android:id="@+id/btn_practice_p1_tan_remove"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="-" android:layout_alignTop="@+id/btn_practice_p1_tan_add"
+				android:layout_toRightOf="@+id/btn_practice_p1_tan_add">
+			</Button>
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_below="@+id/rl_pm_p1_tan" android:id="@+id/rl_pm_p1_art"
+			android:layout_height="48px">
+			<TextView android:id="@+id/txt_practice_p1_art_title"
+				android:layout_height="wrap_content" android:text="Artillery : "
+				android:textStyle="bold" android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" android:layout_width="120px"
+				android:textSize="18px" android:layout_marginLeft="20px">
+			</TextView>
+			<TextView android:id="@+id/txt_practice_p1_art"
+				android:layout_width="50px" android:layout_height="wrap_content"
+				android:text="2" android:layout_alignTop="@+id/txt_practice_p1_art_title"
+				android:layout_toRightOf="@+id/txt_practice_p1_art_title"
+				android:textSize="18px">
+			</TextView>
+			<Button android:id="@+id/btn_practice_p1_art_add"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="+" android:layout_toRightOf="@+id/txt_practice_p1_art">
+			</Button>
+			<Button android:id="@+id/btn_practice_p1_art_remove"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="-" android:layout_alignTop="@+id/btn_practice_p1_art_add"
+				android:layout_toRightOf="@+id/btn_practice_p1_art_add">
+			</Button>
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/rl_pm_p2" android:layout_below="@id/rl_pm_p1"
+		android:layout_height="wrap_content">
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_width="fill_parent"
+			android:id="@+id/rl_pm_p2_header">
+			<TextView android:id="@+id/txt_practice_p2_title"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textStyle="bold" android:layout_alignParentLeft="true"
+				android:text="Artificial Intelligence" android:textSize="20px">
+			</TextView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_below="@+id/rl_pm_p2_header"
+			android:layout_width="fill_parent" android:id="@+id/rl_pm_p2_hov"
+			android:layout_height="48px">
+			<TextView android:id="@+id/txt_practice_p2_hov_title"
+				android:layout_height="wrap_content" android:text="Hovercraft : "
+				android:textStyle="bold" android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" android:layout_width="120px"
+				android:textSize="18px" android:layout_marginLeft="20px">
+			</TextView>
+			<TextView android:id="@+id/txt_practice_p2_hov"
+				android:layout_width="50px" android:layout_height="wrap_content"
+				android:text="2" android:layout_alignTop="@+id/txt_practice_p2_hov_title"
+				android:layout_toRightOf="@+id/txt_practice_p2_hov_title"
+				android:textSize="18px">
+			</TextView>
+			<Button android:id="@+id/btn_practice_p2_hov_add"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="+" android:layout_toRightOf="@+id/txt_practice_p2_hov">
+			</Button>
+			<Button android:id="@+id/btn_practice_p2_hov_remove"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="-" android:layout_alignTop="@+id/btn_practice_p2_hov_add"
+				android:layout_toRightOf="@+id/btn_practice_p2_hov_add">
+			</Button>
+		</RelativeLayout>
+		<RelativeLayout android:layout_below="@+id/rl_pm_p2_hov"
+			android:layout_width="fill_parent" android:id="@+id/rl_pm_p2_tan"
+			android:layout_height="48px">
+			<TextView android:id="@+id/txt_practice_p2_tan_title"
+				android:layout_height="wrap_content" android:text="Tank : "
+				android:textStyle="bold" android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" android:layout_width="120px"
+				android:layout_marginLeft="20px" android:textSize="18px">
+			</TextView>
+			<TextView android:id="@+id/txt_practice_p2_tan"
+				android:layout_width="50px" android:layout_height="wrap_content"
+				android:text="2" android:layout_alignTop="@+id/txt_practice_p2_tan_title"
+				android:layout_toRightOf="@+id/txt_practice_p2_tan_title"
+				android:textSize="18px">
+			</TextView>
+			<Button android:id="@+id/btn_practice_p2_tan_add"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="+" android:layout_toRightOf="@+id/txt_practice_p2_tan">
+			</Button>
+			<Button android:id="@+id/btn_practice_p2_tan_remove"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="-" android:layout_alignTop="@+id/btn_practice_p2_tan_add"
+				android:layout_toRightOf="@+id/btn_practice_p2_tan_add">
+			</Button>
+		</RelativeLayout>
+		<RelativeLayout android:layout_below="@+id/rl_pm_p2_tan"
+			android:layout_width="fill_parent" android:id="@+id/rl_pm_p2_art"
+			android:layout_height="48px">
+			<TextView android:id="@+id/txt_practice_p2_art_title"
+				android:layout_height="wrap_content" android:text="Artillery : "
+				android:textStyle="bold" android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" android:layout_marginLeft="20px"
+				android:layout_width="120px" android:textSize="18px">
+			</TextView>
+			<TextView android:id="@+id/txt_practice_p2_art"
+				android:layout_width="50px" android:layout_height="wrap_content"
+				android:text="2" android:layout_alignTop="@+id/txt_practice_p2_art_title"
+				android:layout_toRightOf="@+id/txt_practice_p2_art_title"
+				android:textSize="18px">
+			</TextView>
+			<Button android:id="@+id/btn_practice_p2_art_add"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="+" android:layout_toRightOf="@+id/txt_practice_p2_art">
+			</Button>
+			<Button android:id="@+id/btn_practice_p2_art_remove"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="-" android:layout_alignTop="@+id/btn_practice_p2_art_add"
+				android:layout_toRightOf="@+id/btn_practice_p2_art_add">
+			</Button>
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_below="@id/rl_pm_p2"
+		android:id="@+id/rl_pm_buttons" android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<Button android:id="@+id/btn_practice_fight"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Fight" android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true">
+		</Button>
+		<Button android:id="@+id/btn_practice_back"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Back" android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true">
+		</Button>
+	</RelativeLayout>
+</RelativeLayout>

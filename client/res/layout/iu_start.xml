@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/iu_start"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/start_image">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/rl_header" android:layout_height="50px"
+		android:layout_alignParentTop="true">
+		<TextView android:id="@+id/label_title" android:textStyle="bold"
+			android:text="IU - The Unreal Reality" android:shadowDx="1.2"
+			android:shadowDy="1.1" android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" android:textColor="@drawable/lightgray"
+			android:layout_height="wrap_content" android:textSize="22sp"
+			android:layout_width="243px">
+		</TextView>
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="50px"
+		android:layout_width="fill_parent" android:id="@+id/rl_username"
+		android:layout_below="@+id/rl_header">
+		<TextView android:id="@+id/label_username"
+			android:layout_width="100px" android:text="Username: "
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_marginLeft="30px" android:textSize="18sp"
+			android:typeface="normal">
+		</TextView>
+		<EditText android:id="@+id/txt_username"
+			android:layout_width="143px" android:layout_height="wrap_content"
+			android:text="EditText" android:layout_centerVertical="true"
+			android:layout_marginLeft="130px">
+		</EditText>
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="50px"
+		android:layout_width="fill_parent" android:id="@+id/rl_password"
+		android:layout_below="@+id/rl_username">
+		<TextView android:id="@+id/label_password"
+			android:layout_width="100px" android:text="Password: "
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:layout_marginLeft="30px"
+			android:textSize="18sp" android:typeface="normal">
+		</TextView>
+		<EditText android:id="@+id/txt_password"
+			android:layout_height="wrap_content" android:text="EditText"
+			android:password="true" android:layout_width="143px"
+			android:layout_centerVertical="true" android:layout_marginLeft="130px">
+		</EditText>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/rl_buttons"
+		android:layout_width="fill_parent" android:layout_height="50px"
+		android:layout_alignParentBottom="true">
+		<Button android:id="@+id/btn_practice" android:text="Skirmish"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" android:layout_width="80px"
+			android:layout_height="wrap_content">
+		</Button>
+		<Button android:id="@+id/btn_login" android:text="Log In"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true" android:layout_width="80px"
+			android:layout_height="wrap_content">
+		</Button>
+		<Button android:id="@+id/btn_close" android:text="Close"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true" android:layout_width="80px"
+			android:layout_height="wrap_content">
+		</Button>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/rl_footer"
+		android:layout_height="50px" android:layout_width="fill_parent"
+		android:layout_above="@+id/rl_buttons"></RelativeLayout>
+	<RelativeLayout android:layout_height="50px"
+		android:layout_width="fill_parent" android:id="@+id/rl_server"
+		android:layout_above="@+id/rl_footer">
+		<TextView android:id="@+id/label_battlefield"
+			android:layout_centerVertical="true" android:layout_height="wrap_content"
+			android:layout_marginLeft="30px" android:typeface="normal"
+			android:textSize="18sp" android:layout_width="100px" android:text="Battle field:">
+		</TextView>
+		<Spinner android:id="@+id/server_name" android:layout_width="160px"
+			android:drawSelectorOnTop="true" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_marginLeft="130px">
+		</Spinner>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_above="@+id/rl_server" android:layout_height="50px"
+		android:id="@+id/rl_briefing">
+		<CheckBox android:id="@+id/box_tutorial"
+			android:layout_height="wrap_content" android:text="Briefing"
+			android:checked="true" android:typeface="normal" android:textSize="18sp"
+			android:layout_width="130px" android:layout_marginLeft="130px">
+		</CheckBox>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/rl_freespace" android:layout_above="@+id/rl_briefing"
+		android:layout_height="fill_parent" android:layout_below="@+id/rl_password"></RelativeLayout>
+</RelativeLayout>
